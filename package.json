@@ -11,11 +11,15 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./src/renderers/detail": "./src/renderers/detail.tsx"
+    "./src/renderers/detail": "./src/renderers/detail.tsx",
+    "./src/renderers/list-row": "./src/renderers/list-row.tsx"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
+  },
+  "dependencies": {
+    "lucide-react": "^1.20.0"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -60,6 +64,10 @@
             "representations": [
               "application/octet-stream"
             ]
+          },
+          "listRow": {
+            "entry": "./src/renderers/list-row.tsx",
+            "propsApiVersion": 1
           }
         }
       },

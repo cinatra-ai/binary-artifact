@@ -70,6 +70,10 @@ export const binaryArtifactManifest: BinaryArtifactManifest = {
         propsApiVersion: 1,
         representations: ["application/octet-stream"],
       },
+      listRow: {
+        entry: "./src/renderers/list-row.tsx",
+        propsApiVersion: 1,
+      },
     },
   },
 };
